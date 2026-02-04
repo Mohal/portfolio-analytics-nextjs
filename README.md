@@ -1,36 +1,71 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Personalized Portfolio with Analytics
 
-## Getting Started
+A modern portfolio built with **Next.js (App Router)**, **TypeScript**, and **TailwindCSS**, featuring integrated **click tracking** and an **Analytics dashboard** to visualize project engagement.  
+This project demonstrates full-stack readiness, frontend polish, and data visualization skills.
 
-First, run the development server:
+---
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## 🚀 Features
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- **Next.js App Router** for modern routing and layouts
+- **TailwindCSS** for responsive, utility-first styling
+- **Global Layout** with header and footer shared across all pages
+- **Pages**:
+  - **Home**: Hero section introducing the portfolio
+  - **About**: Professional bio and skills grid
+  - **Projects**: Responsive project cards with click tracking
+  - **Analytics**: Charts (bar + pie) visualizing project clicks
+- **Click Tracking**:
+  - Records clicks on project links
+  - Persists data in `localStorage`
+  - Displays click counts under each project card
+- **Analytics Dashboard**:
+  - Bar chart showing click counts per project
+  - Pie chart showing click distribution
+  - Built with **Chart.js** + `react-chartjs-2`
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+---
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 🛠️ Tech Stack
 
-## Learn More
+- **Framework**: [Next.js 16](https://nextjs.org/) (App Router)
+- **Language**: TypeScript
+- **Styling**: TailwindCSS
+- **Charts**: Chart.js + react-chartjs-2
+- **State Management**: React hooks (`useState`, `useEffect`)
+- **Storage**: localStorage (future upgrade: backend/database)
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## ⚙️ Setup & Installation
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/Mohal/portfolio-analytics-nextjs.git
+   cd portfolio-analytics-nextjs
 
-## Deploy on Vercel
+2. **Install dependencies**
+   ```bash
+   npm install
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+3. **Run the development server**
+   ```bash
+   npm run dev
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+4. **Open in browser**
+   ```bash
+   http://localhost:3000
+
+---
+
+## 📊 Usage
+
+- Navigate to **Projects** page → click on "View Project" buttons.
+- Each click is tracked and stored in localStorage.
+- Navigate to **Analytics** page → view bar and pie charts of project engagement.
+
+---
+
+## 📜 License
+
+This project is open-source and available under the MIT License.
