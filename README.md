@@ -3,6 +3,8 @@
 A modern portfolio built with **Next.js (App Router)**, **TypeScript**, and **TailwindCSS**, featuring integrated **click tracking** and an **Analytics dashboard** to visualize project engagement.  
 This project demonstrates full-stack readiness, frontend polish, and data visualization skills.
 
+> ⚠️ Note: This project is to demonstrate full-stack readiness, containerization, and analytics integration. It is intended for local use only — not for production deployment.
+
 ---
 
 ## 🚀 Features
@@ -34,11 +36,23 @@ This project demonstrates full-stack readiness, frontend polish, and data visual
 - **Charts**: Chart.js + react-chartjs-2
 - **State Management**: React hooks (`useState`, `useEffect`)
 - **Storage**: localStorage (future upgrade: backend/database)
+```markdown
+- **Containerization**: Docker + Docker Compose (for reproducible local environments)
+
+## 📛 Badges
+
+![Next.js](https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white)
+![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
+![TailwindCSS](https://img.shields.io/badge/TailwindCSS-38B2AC?style=for-the-badge&logo=tailwindcss&logoColor=white)
+![Chart.js](https://img.shields.io/badge/Chart.js-FF6384?style=for-the-badge&logo=chartdotjs&logoColor=white)
+![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
+![Docker Compose](https://img.shields.io/badge/Docker%20Compose-384d54?style=for-the-badge&logo=docker&logoColor=white)
 
 ---
 
 ## ⚙️ Setup & Installation
 
+### Option 1: Local Development (Node.js)
 1. **Clone the repository**
    ```bash
    git clone https://github.com/Mohal/portfolio-analytics-nextjs.git
@@ -55,6 +69,19 @@ This project demonstrates full-stack readiness, frontend polish, and data visual
 4. **Open in browser**
    ```bash
    http://localhost:3000
+
+### Option 2: 🐳 Docker Compose (Recommended)
+1. **Build and start the container**
+   ```bash
+   docker compose up --build
+
+2. **Open in browser**
+   ```bash
+   http://localhost:3000
+
+3. **Stop containers**
+   ```bash
+   docker compose down
 
 ---
 
