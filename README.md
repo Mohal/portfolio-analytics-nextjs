@@ -36,7 +36,6 @@ This project demonstrates full-stack readiness, frontend polish, and data visual
 - **Charts**: Chart.js + react-chartjs-2
 - **State Management**: React hooks (`useState`, `useEffect`)
 - **Storage**: localStorage (future upgrade: backend/database)
-```markdown
 - **Containerization**: Docker + Docker Compose (for reproducible local environments)
 
 ## 📛 Badges
