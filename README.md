@@ -70,15 +70,20 @@ This project demonstrates full-stack readiness, frontend polish, and data visual
    http://localhost:3000
 
 ### Option 2: 🐳 Docker Compose (Recommended)
-1. **Build and start the container**
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/Mohal/portfolio-analytics-nextjs.git
+   cd portfolio-analytics-nextjs
+
+2. **Build and start the container**
    ```bash
    docker compose up --build
 
-2. **Open in browser**
+3. **Open in browser**
    ```bash
    http://localhost:3000
 
-3. **Stop containers**
+4. **Stop containers**
    ```bash
    docker compose down
 
