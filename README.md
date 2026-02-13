@@ -94,3 +94,9 @@ This project demonstrates full-stack readiness, frontend polish, and data visual
 - Navigate to **Projects** page → click on "View Project" buttons.
 - Each click is tracked and stored in localStorage.
 - Navigate to **Analytics** page → view bar and pie charts of project engagement.
+
+---
+
+## &#127760; Live Demo
+
+- [View on Vercel](https://portfolio-analytics-nextjs.vercel.app)
