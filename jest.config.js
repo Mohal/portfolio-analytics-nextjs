@@ -1,6 +1,6 @@
 /** @type {import('jest').Config} */
 module.exports = {
-  testEnvironment: "jsdom",
+  testEnvironment: "jest-environment-jsdom",
   setupFilesAfterEnv: ["<rootDir>/jest.setup.js"],
   transform: {
     "^.+\\.(ts|tsx)$": "ts-jest",
