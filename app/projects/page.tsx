@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useState } from "react";
 
 export default function Projects() {
 	const projects = [
@@ -24,14 +24,13 @@ export default function Projects() {
 		},
 	];
 
-	const [clicks, setClicks] = useState<{ [key: string]: number }>({});
-
-	useEffect(() => {
-		const storedProjectClicks = localStorage.getItem("project_clicks");
-		if (storedProjectClicks) {
-			setClicks(JSON.parse(storedProjectClicks));
+	const [clicks, setClicks] = useState<{ [key: string]: number }>(() => {
+		if (typeof(window) !== "undefined") {
+			const stored = localStorage.getItem("project_clicks");
+			return stored ? JSON.parse(stored) : {};
 		}
-	}, []);
+		return {};
+	});
 
 	const handleClick = (id: string) => {
 		const newClicks = { ...clicks, [id]: (clicks[id] || 0) + 1 };

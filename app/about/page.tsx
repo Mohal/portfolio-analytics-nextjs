@@ -7,7 +7,7 @@ export default function About() {
                 <p className="text-lg text-gray-700 leading-relaxed mb-4">
                     I am Umer, a veteran software engineer and SaaS entrepreneur.
                     My expertise spans Laravel, PHP, React, Node.js, and full-stack web
-                    development. Recently, I've been expanding into modern JavaScript
+                    development. Recently, I&apos;ve been expanding into modern JavaScript
                     stacks and AI/ML to build scalable, cloud-native solutions.
                 </p>
                 <p className="text-lg text-gray-700 leading-relaxed mb-4">
