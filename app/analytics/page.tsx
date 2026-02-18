@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { Bar, Pie } from "react-chartjs-2";
 import {
   Chart as ChartJS,
@@ -17,20 +17,19 @@ import {
 ChartJS.register(CategoryScale, LinearScale, BarElement, ArcElement, Title, Tooltip, Legend);
 
 export default function Analytics() {
-	const [clicks, setClicks] = useState<{ [key: string]: number }>({});
+	const [clicks] = useState<{ [key: string]: number }>(() => {
+    if (typeof(window) !== "undefined") {
+      const stored = localStorage.getItem("project_clicks");
+      return stored ? JSON.parse(stored) : {};
+    }
+    return {};
+  });
 
   const projectTitles: {[key: string]: string} = {
     "portfolio-analytics": "Portfolio Analytics",
     "saas-cms": "SaaS CMS Platform",
     "ai-ml-demo": "AI/ML Integration Demo"
   };
-
-  useEffect(() => {
-    const storedProjectClicks = localStorage.getItem("project_clicks");
-		if (storedProjectClicks) {
-			setClicks(JSON.parse(storedProjectClicks));
-		}
-  }, []);
 
   const labels = Object.keys(clicks).map((id) => projectTitles[id] || id);
   const values = Object.keys(clicks).map((id) => clicks[id]);
